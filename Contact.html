@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>contact us page</title>
+</head>
+<body>
+    <!-- navbar -->
+<nav>
+  <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+  </a>
+
+  <div class="menu-icon" id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="adout.html">About</a></li>
+    <li class="dropdown">
+      <a href="collection.html" class="dropbtn">Collections</a>
+      <ul class="dropdown-content">
+        <li><a href="collection.html">Man Wallets</a></li>
+        <li><a href="woman-collection.html">Woman Wallets</a></li>
+      </ul>
+    </li>
+    <li><a href="campare.html">Compare</a></li>
+    <li><a href="store.html">Our Store</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    <!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact">
+  <p class="section-eyebrow">Get In Touch</p>
+  <h2 class="section-title">Contact Us</h2>
+  <div class="gold-divider"></div>
+  <p class="section-lead">We'd love to hear from you. Reach us by email, phone, or through the form — our team responds within one business day.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>How To Reach Us</h3>
+
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div class="contact-detail">
+          <p class="contact-label">Email</p>
+          <p class="contact-value">
+            General: <a href="mailto:info@luxecarry.com">info@luxecarry.com</a><br>
+            Sales: <a href="mailto:sales@luxecarry.com">sales@luxecarry.com</a><br>
+            Support: <a href="mailto:support@luxecarry.com">support@luxecarry.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-detail">
+          <p class="contact-label">Phone</p>
+          <p class="contact-value">
+            <a href="tel:+12125550174">+1 (212) 555-0174</a><br>
+            Mon – Fri, 9 AM – 6 PM EST
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-detail">
+          <p class="contact-label">Address</p>
+          <p class="contact-value">42 Maison Boulevard, Suite 300<br>New York, NY 10022, USA</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">💬</div>
+        <div class="contact-detail">
+          <p class="contact-label">Social</p>
+          <p class="contact-value">
+            Instagram: <a href="#">@luxecarry</a><br>
+            Facebook: <a href="#">/luxecarryny</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-area">
+      <h3>Send a Message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@example.com">
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <select>
+          <option>General Inquiry</option>
+          <option>Product Availability</option>
+          <option>Authentication Query</option>
+          <option>Order Support</option>
+          <option>Press & Partnerships</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Write your message here..."></textarea>
+      </div>
+      <button class="btn-primary" onclick="sendMessage()" style="width:100%;">Send Message</button>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-about">
+    <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+   
+  </a>
+      <p>Curating the world's finest purses and wallets since 2010. Authenticity guaranteed. White-glove service always.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="collection.html" onclick="filterBrand('louis-vuitton')">Louis Vuitton</a></li>
+        <li><a href="collection.html" onclick="filterBrand('chanel')">Chanel</a></li>
+        <li><a href="collection.html" onclick="filterBrand('hermes')">Hermès</a></li>
+        <li><a href="collection.html" onclick="filterBrand('gucci')">Gucci</a></li>
+        <li><a href="collection.html" onclick="filterBrand('prada')">Prada</a></li>
+        <li><a href="collection.html" onclick="filterBrand('bottega')">Bottega Veneta</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="adout.html">About Us</a></li>
+        <li><a href="store.html">Store Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="campare.html">Compare Products</a></li>
+        <li><a href="mailto:abdullhmirza490@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 LUXE CARRY. All rights reserved.</span>
+    <span class="footer-legal"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     PRODUCT DETAIL MODALS
+══════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div>
+        <p class="modal-brand" id="modalBrand"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

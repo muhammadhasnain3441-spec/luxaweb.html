@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresden RFID Leather Wallet | Nextag</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="product-page">
+
+  <!-- ══════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<nav>
+  <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+  </a>
+
+  <div class="menu-icon" id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="adout.html">About</a></li>
+    <li class="dropdown">
+      <a href="collection.html" class="dropbtn">Collections</a>
+      <ul class="dropdown-content">
+        <li><a href="collection.html">Man Wallets</a></li>
+        <li><a href="woman-collection.html">Woman Wallets</a></li>
+      </ul>
+    </li>
+    <li><a href="campare.html">Compare</a></li>
+    <li><a href="store.html">Our Store</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+    <main class="container">
+        <div class="breadcrumb">Home > All Collection > Dresden RFID Leather Wallet</div>
+
+        <section class="product-main">
+            <div class="product-gallery">
+                <div class="thumbnails">
+                    <img src="images/h1.jpg" alt="thumb">
+                    <img src="images/h2.jpg" alt="thumb">
+                    <img src="images/h3.jpg" alt="thumb">
+                </div>
+                <div class="main-image">
+                    <img src="images/h1.jpg" alt="Dresden RFID Leather Wallet">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">CHANEL Black Mens Wallet</h1>
+                <p class="price">Rs. 5,500.00</p>
+                
+                <div class="color-selection">
+                    <span>Colour: Black</span>
+                    <div class="color-dots">
+                        <div class="dot black active"></div>
+                        <div class="dot blue"></div>
+                        <div class="dot brown"></div>
+                    </div>
+                </div>
+
+                <div class="quantity-section">
+                    <label>Quantity</label>
+                    <div class="qty-input">
+                        <button onclick="changeQty(-1)">-</button>
+                        <input type="number" id="qty" value="1" min="1">
+                        <button onclick="changeQty(1)">+</button>
+                    </div>
+                </div>
+
+            <div class="product-buttons">
+    <button class="btn-primary add-to-cart" onclick="addToCartClicked()">Add to Cart</button>
+    <button class="btn-secondary buy-now" onclick="openPaymentModal()">Buy Now</button>
+</div>
+
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePaymentModal()">&times;</span>
+        <h2 class="logo-text">NEXTAG <span>PAYMENT</span></h2>
+        <p>Total Amount: <span id="modalPrice">Rs. 7,500.00</span></p>
+        
+        <form id="paymentForm" onsubmit="processPayment(event)">
+            <input type="text" placeholder="Cardholder Name" required>
+            <input type="text" placeholder="Card Number (Mastercard/Visa)" maxlength="16" required>
+            <div class="form-row">
+                <input type="text" placeholder="MM/YY" maxlength="5" required>
+                <input type="password" placeholder="CVV" maxlength="3" required>
+            </div>
+            <button type="submit" class="btn-pay">Pay Now</button>
+        </form>
+    </div>
+</div>
+
+                <div class="action-links">
+                    <span><i class="icon"></i> Compare</span>
+                    <span><i class="icon"></i> Ask a question</span>
+                    <span><i class="icon"></i> Share</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-description">
+            <h2 class="tab-title">Product Description</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="gold-icon">♥</div>
+                    <div class="text">
+                        <h3>DETAILS:</h3>
+                        <p>This handcrafted RFID wallet combines style and security. Its slim design fits perfectly in your pocket.</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="gold-icon">💼</div>
+                    <div class="text">
+                        <h3>FEATURES:</h3>
+                        <ul>
+                            <li>* Main Compartment</li>
+                            <li>One main cash compartment.</li>
+                            <li>* Credit Card Slots.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-about">
+    <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+   
+  </a>
+      <p>Curating the world's finest purses and wallets since 2010. Authenticity guaranteed. White-glove service always.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="collection.html" onclick="filterBrand('louis-vuitton')">Louis Vuitton</a></li>
+        <li><a href="collection.html" onclick="filterBrand('chanel')">Chanel</a></li>
+        <li><a href="collection.html" onclick="filterBrand('hermes')">Hermès</a></li>
+        <li><a href="collection.html" onclick="filterBrand('gucci')">Gucci</a></li>
+        <li><a href="collection.html" onclick="filterBrand('prada')">Prada</a></li>
+        <li><a href="collection.html" onclick="filterBrand('bottega')">Bottega Veneta</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="adout.html">About Us</a></li>
+        <li><a href="store.html">Store Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="campare.html">Compare Products</a></li>
+        <li><a href="mailto:abdullhmirza490@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 LUXE CARRY. All rights reserved.</span>
+    <span class="footer-legal"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
+  </div>
+  
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     PRODUCT DETAIL MODALS
+══════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div>
+        <p class="modal-brand" id="modalBrand"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

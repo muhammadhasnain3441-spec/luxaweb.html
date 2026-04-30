@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>collaction page</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+        </a>
+
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adout.html">About</a></li>
+            <li class="dropdown">
+                <a href="collection.html" class="dropbtn">Collections</a>
+                <ul class="dropdown-content">
+                    <li><a href="collection.html">Man Wallets</a></li>
+                    <li><a href="woman-collection.html">Woman Wallets</a></li>
+                </ul>
+            </li>
+            <li><a href="campare.html">Compare</a></li>
+            <li><a href="store.html">Our Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ══════════════════════════════════════
+     BRANDS & PRODUCTS
+══════════════════════════════════════ -->
+    <section id="brands">
+        <p class="section-eyebrow">Shop By Brand</p>
+        <h2 class="section-title">Woman Collections</h2>
+        <div class="gold-divider"></div>
+        <p class="section-lead">Select a brand to filter products, or browse all collections below. Click "Details" to
+            view full specifications or "Compare" to add items to your comparison.</p>
+
+        <div class="brand-filters">
+            <button class="brand-btn active" onclick="filterBrand('all', this)">All Brands</button>
+            <button class="brand-btn" onclick="filterBrand('louis-vuitton', this)">Louis Vuitton</button>
+            <button class="brand-btn" onclick="filterBrand('chanel', this)">Chanel</button>
+            <button class="brand-btn" onclick="filterBrand('hermes', this)">Hermès</button>
+            <button class="brand-btn" onclick="filterBrand('gucci', this)">Gucci</button>
+            <button class="brand-btn" onclick="filterBrand('prada', this)">Prada</button>
+            <button class="brand-btn" onclick="filterBrand('bottega', this)">Bottega Veneta</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+
+            <!-- LOUIS VUITTON 1 -->
+            <div class="product-card visible" data-brand="louis-vuitton">
+
+
+                <<a href="product12.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/louis1.jpg" alt="Neverfull MM Tote"
+                                style="width:310px; height: 300px; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product12.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.4,690</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+            <!-- LOUIS VUITTON 1 -->
+            <div class="product-card visible" data-brand="louis-vuitton">
+
+
+                <<a href="product13.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/louis-img1.jpg" alt="Neverfull MM Tote"
+                                style="width:310px; height: 300px; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product13.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.3,690</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+            <!-- chanel 1 -->
+            <div class="product-card visible" data-brand="chanel">
+
+
+                <<a href="product14.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/CH1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product14.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.1,800</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+            <!-- CHANEL 1 -->
+            <div class="product-card visible" data-brand="chanel">
+
+
+                <<a href="product15.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/ch-image1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product15.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.27,600</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+            <!-- CHANEL 2 -->
+            <div class="product-card visible" data-brand="hermes">
+
+
+                <a href="product16.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/h1.jpg" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product16.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.45,690</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+            <!-- HERMÈS 1 -->
+            <div class="product-card visible" data-brand="hermes">
+
+
+                <<a href="product17.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/h-image1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product17.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.9,666</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+            <!-- HERMÈS 2 -->
+            <!-- LOUIS VUITTON 2 -->
+            <div class="product-card visible" data-brand="gucci">
+
+
+                <<a href="product18.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/g1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product18.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.12,000</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+            <!-- GUCCI 1 -->
+            <div class="product-card visible" data-brand="gucci">
+
+
+                <<a href="product19.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/g-image1.jpg" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product19.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.28,590</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+
+            <!-- GUCCI 2 -->
+            <div class="product-card visible" data-brand="prada">
+
+
+                <<a href="product20.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/p1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product20.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.51,690</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+            <!-- GUCCI 2 -->
+            <div class="product-card visible" data-brand="prada">
+
+
+                <<a href="product21.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/p-image1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product21.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">$1,690</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+
+            <!-- BOTTEGA 2 -->
+            <div class="product-card visible" data-brand="bottega">
+
+
+                <<a href="product22.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/b1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product22.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.21,690</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+
+            <!-- BOTTEGA 2 -->
+            <div class="product-card visible" data-brand="bottega">
+
+
+                <<a href="product23.html" style="text-decoration: none;">
+                    <div class="product-img-bg">
+                        <span style="font-size: 50px;">
+                            <img src="images/b-image1.webp" alt="Neverfull MM Tote"
+                                style="width:310px; height: auto; background-color: rgb(179, 179, 179);">
+
+                        </span>
+                    </div>
+                    </a>
+                    <span class="product-badge">New</span>
+                    <div class="product-body">
+                        <p class="product-brand">Louis Vuitton</p>
+                        <h3 class="product-name">Neverfull MM Tote</h3>
+                        <p class="product-summary"><a href="product23.html">The iconic Monogram canvas tote with supple
+                                side laces and a removable pouch. Spacious enough for everyday essentials.</a></p>
+                        <p class="product-price">Rs.11,690</p>
+                        <div class="product-actions">
+                            <!-- <button class="btn-sm btn-sm-gold" onclick="openModal('lv1')">Details</button> -->
+
+                        </div>
+                        <label class="compare-check"><input type="checkbox"
+                                onchange="toggleCompare(this, 'LV Neverfull MM', 'Louis Vuitton', '$1,690', 'Monogram Canvas', 'Tote', 'Removable pouch, brass hardware, cotton lining')">
+                            Add to Compare</label>
+                    </div>
+
+            </div>
+    </section>
+
+
+
+    <!-- ══════════════════════════════════════
+     COMPARE
+══════════════════════════════════════ -->
+    <section id="compare">
+        <p class="section-eyebrow">Side-By-Side</p>
+        <h2 class="section-title">Compare Products</h2>
+        <div class="gold-divider"></div>
+        <p class="section-lead">Use the checkboxes on product cards to add items here (up to 3). Compare across brands
+            and categories to make the perfect choice.</p>
+
+        <div class="compare-bar">
+            <span class="compare-bar-label">SELECTED FOR COMPARISON</span>
+            <div class="compare-bar-items" id="compareSlots">
+                <div class="compare-slot" id="slot0">— Select Product —</div>
+                <div class="compare-slot" id="slot1">— Select Product —</div>
+                <div class="compare-slot" id="slot2">— Select Product —</div>
+            </div>
+            <button class="btn-primary" onclick="runCompare()" style="font-size:10px;padding:12px 28px;">Compare
+                Now</button>
+        </div>
+
+        <div class="compare-table-wrap">
+            <table class="compare-table" id="compareTable">
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th id="th0"></th>
+                        <th id="th1">—</th>
+                        <th id="th2">—</th>
+                    </tr>
+                </thead>
+                <tbody id="compareBody">
+                    <tr>
+                        <td>Brand</td>
+                        <td id="cb0">—</td>
+                        <td id="cb1">—</td>
+                        <td id="cb2">—</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td id="cp0">—</td>
+                        <td id="cp1">—</td>
+                        <td id="cp2">—</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td id="cm0">—</td>
+                        <td id="cm1">—</td>
+                        <td id="cm2">—</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td id="ct0">—</td>
+                        <td id="ct1">—</td>
+                        <td id="ct2">—</td>
+                    </tr>
+                    <tr>
+                        <td>Key Features</td>
+                        <td id="cf0">—</td>
+                        <td id="cf1">—</td>
+                        <td id="cf2">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo">
+                    <img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+
+                </a>
+                <p>Curating the world's finest purses and wallets since 2010. Authenticity guaranteed. White-glove
+                    service always.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="collection.html" onclick="filterBrand('louis-vuitton')">Louis Vuitton</a></li>
+                    <li><a href="collection.html" onclick="filterBrand('chanel')">Chanel</a></li>
+                    <li><a href="collection.html" onclick="filterBrand('hermes')">Hermès</a></li>
+                    <li><a href="collection.html" onclick="filterBrand('gucci')">Gucci</a></li>
+                    <li><a href="collection.html" onclick="filterBrand('prada')">Prada</a></li>
+                    <li><a href="collection.html" onclick="filterBrand('bottega')">Bottega Veneta</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="adout.html">About Us</a></li>
+                    <li><a href="store.html">Store Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="campare.html">Compare Products</a></li>
+                    <li><a href="mailto:abdullhmirza490@gmail.com">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy">© 2024 LUXE CARRY. All rights reserved.</span>
+            <span class="footer-legal"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of
+                    Service</a></span>
+        </div>
+    </footer>
+
+
+    <!-- ══════════════════════════════════════
+     PRODUCT DETAIL MODALS
+══════════════════════════════════════ -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div>
+                    <p class="modal-brand" id="modalBrand"></p>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                </div>
+                <button class="modal-close" onclick="closeModalDirect()">✕</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

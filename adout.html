@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>about page</title>
+</head>
+<body>
+<!-- navbar -->
+
+<nav>
+  <a href="index.html" class="logo">
+     <img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+  </a>
+
+  <div class="menu-icon" id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="adout.html">About</a></li>
+    <li class="dropdown">
+      <a href="collection.html" class="dropbtn">Collections</a>
+      <ul class="dropdown-content">
+        <li><a href="collection.html">Man Wallets</a></li>
+        <li><a href="woman-collection.html">Woman Wallets</a></li>
+      </ul>
+    </li>
+    <li><a href="campare.html">Compare</a></li>
+    <li><a href="store.html">Our Store</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    <!-- aboudt -->
+    <section id="introduction">
+  <p class="section-eyebrow">About Our Collections</p>
+  <h2 class="section-title">The World's Finest<br>Leather Goods</h2>
+  <div class="gold-divider"></div>
+  <p class="section-lead">
+    We curate an exceptional portfolio of luxury purses and wallets, representing heritage houses and contemporary icons alike. Each piece is selected for its craftsmanship, provenance, and enduring elegance.
+  </p>
+
+  <div class="intro-grid">
+    <div class="intro-card">
+      <div class="intro-card-icon">👜</div>
+      <h3>Luxury Purses</h3>
+      <p>From the iconic quilted Chanel Classic Flap to the architectural Hermès Birkin, our purse collection spans the full spectrum of luxury craftsmanship. Each carries a story of artisanal heritage, material excellence, and timeless design that transcends seasonal trends.</p>
+    </div>
+    <div class="intro-card">
+      <div class="intro-card-icon">👛</div>
+      <h3>Premium Wallets</h3>
+      <p>Our wallet selection features the finest billfolds, cardholders, and zip-arounds from Louis Vuitton, Gucci, Bottega Veneta, and more. Crafted in full-grain calfskin, exotic leathers, and signature monogram canvases, these are investments meant to last decades.</p>
+    </div>
+    <div class="intro-card">
+      <div class="intro-card-icon">🏅</div>
+      <h3>Authenticity Guarantee</h3>
+      <p>Every item in our collection comes with a certificate of authenticity verified by our in-house specialists. We work exclusively with authorised dealers and reputable auction houses to ensure each piece meets the highest standards of provenance and condition.</p>
+    </div>
+    <div class="intro-card">
+      <div class="intro-card-icon">📦</div>
+      <h3>White-Glove Service</h3>
+      <p>From private viewing appointments to bespoke packaging and global concierge delivery, we offer an elevated retail experience worthy of the pieces we carry. Our team of luxury consultants is available to assist with selections, authentication queries, and gifting.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-about">
+    <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+   
+  </a>
+      <p>Curating the world's finest purses and wallets since 2010. Authenticity guaranteed. White-glove service always.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="collection.html" onclick="filterBrand('louis-vuitton')">Louis Vuitton</a></li>
+        <li><a href="collection.html" onclick="filterBrand('chanel')">Chanel</a></li>
+        <li><a href="collection.html" onclick="filterBrand('hermes')">Hermès</a></li>
+        <li><a href="collection.html" onclick="filterBrand('gucci')">Gucci</a></li>
+        <li><a href="collection.html" onclick="filterBrand('prada')">Prada</a></li>
+        <li><a href="collection.html" onclick="filterBrand('bottega')">Bottega Veneta</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="adout.html">About Us</a></li>
+        <li><a href="store.html">Store Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="campare.html">Compare Products</a></li>
+        <li><a href="mailto:abdullhmirza490@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 LUXE CARRY. All rights reserved.</span>
+    <span class="footer-legal"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     PRODUCT DETAIL MODALS
+══════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div>
+        <p class="modal-brand" id="modalBrand"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+</body>
+</html>

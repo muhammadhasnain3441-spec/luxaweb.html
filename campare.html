@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css ">
+    <title>Document</title>
+</head>
+<body>
+  <!-- ══════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<nav>
+  <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+   
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="adout.html">About</a></li>
+    <li><a href="collection.html">Collections</a></li>
+    <li><a href="campare.html">Compare</a></li>
+    <li><a href="store.html">Our Store</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    <!-- ══════════════════════════════════════
+     COMPARE
+══════════════════════════════════════ -->
+<section id="compare">
+  <p class="section-eyebrow">Side-By-Side</p>
+  <h2 class="section-title">Compare Products</h2>
+  <div class="gold-divider"></div>
+  <p class="section-lead">Use the checkboxes on product cards to add items here (up to 3). Compare across brands and categories to make the perfect choice.</p>
+
+  <div class="compare-bar">
+    <span class="compare-bar-label">SELECTED FOR COMPARISON</span>
+    <div class="compare-bar-items" id="compareSlots">
+      <div class="compare-slot" id="slot0">— Select Product —</div>
+      <div class="compare-slot" id="slot1">— Select Product —</div>
+      <div class="compare-slot" id="slot2">— Select Product —</div>
+    </div>
+    <button class="btn-primary" onclick="runCompare()" style="font-size:10px;padding:12px 28px;">Compare Now</button>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table" id="compareTable">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th id="th0"></th>
+          <th id="th1">—</th>
+          <th id="th2">—</th>
+        </tr>
+      </thead>
+      <tbody id="compareBody">
+        <tr>
+          <td>Brand</td>
+          <td id="cb0">—</td><td id="cb1">—</td><td id="cb2">—</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td id="cp0">—</td><td id="cp1">—</td><td id="cp2">—</td>
+        </tr>
+        <tr>
+          <td>Material</td>
+          <td id="cm0">—</td><td id="cm1">—</td><td id="cm2">—</td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td id="ct0">—</td><td id="ct1">—</td><td id="ct2">—</td>
+        </tr>
+        <tr>
+          <td>Key Features</td>
+          <td id="cf0">—</td><td id="cf1">—</td><td id="cf2">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+  <a href="index.html" class="logo">
+<img src="c:\Users\M Hasnain\Documents\LUXA WEBSITE\images\1337.png" style="width:90px;">
+   
+  </a>
+      <p>Curating the world's finest purses and wallets since 2010. Authenticity guaranteed. White-glove service always.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="#brands" onclick="filterBrand('louis-vuitton')">Louis Vuitton</a></li>
+        <li><a href="#brands" onclick="filterBrand('chanel')">Chanel</a></li>
+        <li><a href="#brands" onclick="filterBrand('hermes')">Hermès</a></li>
+        <li><a href="#brands" onclick="filterBrand('gucci')">Gucci</a></li>
+        <li><a href="#brands" onclick="filterBrand('prada')">Prada</a></li>
+        <li><a href="#brands" onclick="filterBrand('bottega')">Bottega Veneta</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#introduction">About Us</a></li>
+        <li><a href="#location">Store Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#compare">Compare Products</a></li>
+        <li><a href="mailto:abdullhmirza490@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 LUXE CARRY. All rights reserved.</span>
+    <span class="footer-legal"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     PRODUCT DETAIL MODALS
+══════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div>
+        <p class="modal-brand" id="modalBrand"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     TOAST
+══════════════════════════════════════ -->
+<div class="toast" id="toast"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
