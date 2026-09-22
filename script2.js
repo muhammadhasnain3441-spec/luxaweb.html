@@ -1,8 +1,8 @@
-// ── Modal data ──
+// ── Luxa Website ──
 // const products = {
 //   lv1: {
-//     brand: 'Louis Vuitton', name: 'Neverfull MM Tote',
-//     features: [
+//     brand: 'Louis Vuitton', name: 'Neverfull Tote price ',
+//     feature: [
 //       'Monogram coated canvas exterior — durable and water-resistant',
 //       'Natural cowhide leather trim, handles, and laces with patina aging',
 //       'Removable zip-top pouch doubles as a clutch or wristlet',
@@ -16,7 +16,7 @@
 //     ]
 //   },
 //   lv2: {
-//     brand: 'Louis Vuitton', name: 'Zippy Wallet',
+//     brand: 'Louis Vuitton', name: 'Zippy mans Wallet',
 //     features: [
 //       'Monogram coated canvas with toile lining',
 //       'All-round zip closure with LV engraved zip pull',
