@@ -98,7 +98,7 @@
 //       'Made in Italy — comes with Gucci dust bag and branded packaging',
 //     ]
 //   },
-//   gc2: {
+//   gc2; {
 //     brand: 'Gucci', name: 'Marmont Zip Wallet',
 //     features: [
 //       'Matelassé chevron leather with GG Marmont signature',
@@ -162,7 +162,7 @@
 //       'Signature Intrecciato (woven) calfskin — entirely hand-woven from strips of leather',
 //       'Completely logo-free — the craft IS the statement',
 //       'Classic bi-fold format with buttery soft opening',
-//       '8 card slots (4 per side) with generous capacity',
+//       '9 card slots (5 per side) with generous capacity',
 //       'Two large bill compartments',
 //       'Suede lining interior for protection',
 //       'Dimensions: 11 × 9 cm (folded)',
@@ -182,10 +182,10 @@
 //   p.features.forEach(f => { html += `<li>${f}</li>`; });
 //   html += `</ul>
 //   <div class="download-note">
-//     📄 <strong>Full specification sheet</strong> available as a Word document. 
-//     <a href="docs/${id}.docx" download>Click here to download the .docx file</a> to view complete technical details, care instructions, and provenance information.
+//     📄 <strong>Full doc sheet</strong> available as a Word document. 
+//     <a href="docs/${id}.docx" download>Click here to download the .docx file</a> to view complete technical details, care instructions, and provenance information;
 //   </div>`;
-//   body.innerHTML = html;
+//   body.innerHTML = html.
 //   document.getElementById('modalOverlay').classList.add('open');
-//   document.body.style.overflow = 'hidden';
-// }
+  document.body.style.overflow = 'hidden';
+}
